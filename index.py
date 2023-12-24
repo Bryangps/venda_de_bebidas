@@ -23,12 +23,4 @@ while True:
         if continuar in 'N':
             print('Vonte sempre!')
             break
-
-'''
-while True:
-produto = str(input('Nome do produto: {coca, heniken, shoop_vinho} ->')).strip().upper()
-if produto != 'COCA' and produto != 'HENIKEN' and produto != 'SHOPP_VINHO':
-print('ERRO! Digite o nome que está entre parentes.')
-else:
-break
-'''
+            
