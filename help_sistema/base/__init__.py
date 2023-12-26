@@ -24,12 +24,6 @@ def criar_arquivo(nome):
         print('Arquivo criado com sucesso')
 
 
-def cadastro(arq, produto='<desconhecido>', quantidade=0, preco=0):
-    with open(arq, 'a', encoding='utf-8') as arquivo:
-        arquivo.write(f'{produto}; {quantidade}; {preco:.2f}\n')
-        print(f'Novo registro de {produto} adicionado')
-
-
 class Produto:
     def __init__(self):
         self.produto = []
@@ -71,5 +65,8 @@ class Produto:
             print(f'{self.produto[0]} adicionado')
         del self.produto[:3]
 
-
+    def remover_products(self):
+        with open('produtos.txt', 'w', encoding='utf-8') as arquivo:
+            arquivo.write(' ')
+            print('Removido com sucesso')
 

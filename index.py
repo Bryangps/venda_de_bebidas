@@ -1,7 +1,7 @@
 from help_sistema.base import *
 
 #Programa principal
-arq = 'produtos.csv'
+arq = 'produtos.txt'
 if not arquivo_exist(arq):
     criar_arquivo(arq)
 
@@ -23,4 +23,6 @@ while True:
         if continuar in 'N':
             print('Vonte sempre!')
             break
-            
+
+
+
