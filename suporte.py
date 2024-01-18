@@ -8,7 +8,7 @@ def nomeproduto():
                 if name == '':
                     print('Campo não pode ficar vazio !!')
                 else:
-                    break
+                    return name
         except KeyboardInterrupt:
             print('\nVolte sempre')
             return 'stop'
@@ -24,7 +24,7 @@ def quatidade():
             print('\nVolte sempre')
             return 'stop'
         else:
-            break
+            return qtd
 
 
 
