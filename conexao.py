@@ -1,9 +1,9 @@
 import psycopg2
 
 conn = psycopg2.connect(
-    database='vendas',
+    database='vendas_bebidas',
     user='postgres',
-    password='#Gp.silva22',
+    password='#Gp.silva18',
     host='localhost',
     port='5432'
 )

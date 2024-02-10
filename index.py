@@ -1,11 +1,11 @@
 from suporte import *
 from conexao import conn
 # 1 - Criar a tabela de produto
-'''
-cursor = conn.cursor()
 
+cursor = conn.cursor()
+'''
 cursor.execute("""
-    CREATE TABLE produto(
+    CREATE TABLE bebidas(
     id SERIAL PRIMARY KEY, 
     nome TEXT NOT NULL,
     quantidade INTEGER
@@ -23,6 +23,12 @@ print('-' * 45)
 print('CADASTRO DE BEBIDAS'.center(45))
 print('-' * 45)
 
+produto = input('Nome Produto: ')
+produto = tratar_istrig(produto)
+print(produto)
+
+
+'''
 ok = True
 while ok:
     produto = nomeproduto()
@@ -65,18 +71,4 @@ while ok:
             break
         else:
             print('ERRO, Valor invalido, informe "S ou N" ')
-
-
-
-
-
-# 3 - Criar a tabela de clientes
-
-# 4 - Fazer a venda do produto para o cliente
-
-
-# 5 - Valor total da conta do cliente
-
-
-
-# 6 - Iformar o status do cliente, se está pago ou não.
+'''

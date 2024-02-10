@@ -1,7 +1,20 @@
-def nomeproduto():
+def tratar_istrig(nome):
+    nome = nome.strip()
+    nome = nome.title()
+    if nome:
+        if nome.isdigit():
+            print('ERRO, O campo não pode ser preechido com número!!')
+        else:
+            return nome
+    else:
+        print('Campo não pode ficar vazio !!')
+
+
+
+
+def nomeproduto(name):
     while True:
         try:
-            name = str(input('Produto: ')).strip().title()
             if name.isdigit():
                 print('ERRO, O campo não pode ser preechido com número!!')
             else:
